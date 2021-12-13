@@ -1,10 +1,10 @@
 ﻿namespace Helpers;
 
-public class LongHelpers
+public class DoubleHelpers
 {
-    public long GiveMeLong(string text)
+    public double GiveMeDouble(string text)
     {
-        long number = 0;
+        double number = 0;
         string numberString;
         bool isTrue;
         bool isError = false;
@@ -13,7 +13,7 @@ public class LongHelpers
             if (isError) Console.WriteLine("Błąd podaj jeszcze raz.");
             Console.Write(text);
             numberString = Console.ReadLine();
-            isTrue = IsLong(numberString, ref number);
+            isTrue = IsDouble(numberString, ref number);
             isError = true;
         }
         while (isTrue == false);
@@ -21,13 +21,13 @@ public class LongHelpers
         return number;
     }
 
-    public bool IsLong(string text, ref long number)
+    public bool IsDouble(string text, ref double number)
     {
-        return long.TryParse(text, out number);
+        return double.TryParse(text, out number);
     }
-    public bool IsLong(string text)
+    public bool IsDouble(string text)
     {
-        long number = 1;
-        return IsLong(text, ref number);
+        double number = 1;
+        return IsDouble(text, ref number);
     }
 }

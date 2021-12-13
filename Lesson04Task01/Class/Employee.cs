@@ -13,6 +13,6 @@ namespace Task01.Class
         public int Age { get; set; }
         public char Sex { get; set; }
         public string PESEL { get; set; }
-        public Int64 Id { get; set; }
+        public long Id { get; set; }
     }
 }
