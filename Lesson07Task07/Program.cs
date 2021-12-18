@@ -4,7 +4,7 @@ DoubleHelpers doubleHelpers = new DoubleHelpers();
 
 Console.WriteLine("Która liczba najwieksza.");
 double[] number = new double[3];
-double maxNumber=0;
+double maxNumber = 0;
 
 number[0] = doubleHelpers.GiveMe("Podaj pierwsza liczbę: ");
 number[1] = doubleHelpers.GiveMe("Podaj drugą liczbę: ");

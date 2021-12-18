@@ -14,7 +14,7 @@ public class SexHelpers
             stringSex = Console.ReadLine().ToLower();
             isError = true;
         }
-        while (stringSex !="m" && stringSex != "k");
+        while (stringSex != "m" && stringSex != "k");
 
         return char.Parse(stringSex);
     }

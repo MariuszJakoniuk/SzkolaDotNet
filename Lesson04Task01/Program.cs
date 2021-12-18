@@ -2,7 +2,7 @@
 using Task01.Class;
 
 IntHelpers intHelpers = new IntHelpers();
-ByteHelpers byteHelpers = new ByteHelpers();    
+ByteHelpers byteHelpers = new ByteHelpers();
 StringHelpers stringHelpers = new StringHelpers();
 SexHelpers sexHelpers = new SexHelpers();
 LongHelpers longHelpers = new LongHelpers();

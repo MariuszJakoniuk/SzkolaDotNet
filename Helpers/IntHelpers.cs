@@ -29,7 +29,7 @@ public class IntHelpers
 
     public bool IsInt(string text)
     {
-        int number=1;
+        int number = 1;
         return IsInt(text, ref number);
     }
 }

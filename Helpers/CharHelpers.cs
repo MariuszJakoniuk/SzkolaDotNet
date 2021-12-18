@@ -30,7 +30,7 @@ public class CharHelpers
             charLetter = GiveMe(text);
             isError = true;
         }
-        while (Char.IsLetter(charLetter) == false );
+        while (Char.IsLetter(charLetter) == false);
 
         return charLetter;
     }

@@ -8,8 +8,8 @@ double second = doubleHelpers.GiveMe("Podaj drugi odcinek: ");
 double three = doubleHelpers.GiveMe("Podaj trzeci odcinek: ");
 
 if ((three > first && three > second && first + second > three) ||
-    (second> first && second > three && first+ three  > second) ||
-    (first> second && first > three && second + three > first))
+    (second > first && second > three && first + three > second) ||
+    (first > second && first > three && second + three > first))
     Console.WriteLine("Można zbudować trójkąt");
 else
     Console.WriteLine("Nie można zbudować trójkąt");

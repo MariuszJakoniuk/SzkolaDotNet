@@ -1,6 +1,6 @@
 ﻿using Helpers;
 
-LongHelpers longHelpers=new LongHelpers();
+LongHelpers longHelpers = new LongHelpers();
 
 Console.WriteLine("Sprawdzamy liczbę czy jest dodatnią, ujemną, a może zerem");
 long number = longHelpers.GiveMe("Podaj liczbe: ");

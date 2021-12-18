@@ -14,7 +14,7 @@ DoubleHelpers doubleHelper = new DoubleHelpers();
 
 Console.WriteLine("\n\rPodaj swoje");
 intInt = intHelper.GiveMe("Podaj liczbę całkowitą: ");
-stringString  = stringHelper.GiveMe("Podaj jakis tekst: ");
+stringString = stringHelper.GiveMe("Podaj jakis tekst: ");
 doubleDouble = doubleHelper.GiveMe("Podaj liczbę: ");
 
 Console.WriteLine($"Liczba całkowita: {intInt}");

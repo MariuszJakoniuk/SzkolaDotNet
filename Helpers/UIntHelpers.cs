@@ -1,10 +1,10 @@
 ﻿namespace Helpers;
 
-public class ByteHelpers
+public class UIntHelpers
 {
-    public byte GiveMe(string text)
+    public uint GiveMe(string text)
     {
-        byte number = 0;
+        uint number = 0;
         string numberString;
         bool isTrue;
         bool isError = false;
@@ -14,7 +14,7 @@ public class ByteHelpers
             if (isError) Console.WriteLine("Błąd podaj jeszcze raz.");
             Console.Write(text);
             numberString = Console.ReadLine();
-            isTrue = IsByte(numberString, ref number);
+            isTrue = IsUInt(numberString, ref number);
             isError = true;
         }
         while (isTrue == false);
@@ -22,14 +22,14 @@ public class ByteHelpers
         return number;
     }
 
-    public bool IsByte(string text, ref byte number)
+    public bool IsUInt(string text, ref uint number)
     {
-        return byte.TryParse(text, out number);
+        return uint.TryParse(text, out number);
     }
 
-    public bool IsByte(string text)
+    public bool IsUInt(string text)
     {
-        byte number = 1;
-        return IsByte(text, ref number);
+        uint number = 1;
+        return IsUInt(text, ref number);
     }
 }
