@@ -1,7 +1,7 @@
 ﻿namespace Helpers;
 public class StringHelpers
 {
-    public string GiveMeString(string text)
+    public string GiveMe(string text)
     {
         string stringString = "";
         bool isError = false;

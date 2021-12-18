@@ -2,9 +2,9 @@
 
 CharHelpers charHelpers = new CharHelpers();
 
-char char01 = charHelpers.GiveMeCharLetter("Podaj pierwszą literę: ");
-char char02 = charHelpers.GiveMeCharLetter("Podaj drugą literę: ");
-char char03 = charHelpers.GiveMeCharLetter("Podaj trzecią literę: ");
+char one = charHelpers.GiveMeCharLetter("Podaj pierwszą literę: ");
+char two = charHelpers.GiveMeCharLetter("Podaj drugą literę: ");
+char three = charHelpers.GiveMeCharLetter("Podaj trzecią literę: ");
 
-Console.WriteLine($"\n\rLitera trzecia to {char03} \n\rLitera druga {char02} \n\rLitera pierwsza {char01}");
+Console.WriteLine($"\n\rLitera trzecia to {three} \n\rLitera druga {two} \n\rLitera pierwsza {one}");
 Console.ReadLine();

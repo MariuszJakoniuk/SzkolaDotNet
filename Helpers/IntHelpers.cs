@@ -2,7 +2,7 @@
 
 public class IntHelpers
 {
-    public int GiveMeInt(string text)
+    public int GiveMe(string text)
     {
         int number = 0;
         string numberString;

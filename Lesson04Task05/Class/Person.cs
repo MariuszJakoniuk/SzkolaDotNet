@@ -6,9 +6,9 @@ public class Person
     public string LastName { get; set; }
     public string PhoneNumber { get; set; }
     public string Email { get; set; }
-    public double Growth { get; set; }
-    public double Weight { get; set; }
-    public int Age { get; set; }
+    public float Growth { get; set; }
+    public float Weight { get; set; }
+    public byte Age { get; set; }
     public char Sex { get; set; }
     public string PESEL { get; set; }
 }

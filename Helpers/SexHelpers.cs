@@ -2,7 +2,7 @@
 
 public class SexHelpers
 {
-    public char GiveMeSex(string text)
+    public char GiveMe(string text)
     {
         string stringSex;
         bool isError = false;

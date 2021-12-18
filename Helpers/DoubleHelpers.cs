@@ -2,7 +2,7 @@
 
 public class DoubleHelpers
 {
-    public double GiveMeDouble(string text)
+    public double GiveMe(string text)
     {
         double number = 0;
         string numberString;

@@ -1,19 +1,20 @@
 ﻿namespace Helpers;
 
-public class LongHelpers
+public class ByteHelpers
 {
-    public long GiveMe(string text)
+    public byte GiveMe(string text)
     {
-        long number = 0;
+        byte number=0;
         string numberString;
         bool isTrue;
         bool isError = false;
+
         do
         {
             if (isError) Console.WriteLine("Błąd podaj jeszcze raz.");
             Console.Write(text);
             numberString = Console.ReadLine();
-            isTrue = IsLong(numberString, ref number);
+            isTrue = IsByte(numberString, ref number);
             isError = true;
         }
         while (isTrue == false);
@@ -21,13 +22,14 @@ public class LongHelpers
         return number;
     }
 
-    public bool IsLong(string text, ref long number)
+    public bool IsByte(string text, ref byte number)
     {
-        return long.TryParse(text, out number);
+        return byte.TryParse(text, out number);
     }
-    public bool IsLong(string text)
+
+    public bool IsByte(string text)
     {
-        long number = 1;
-        return IsLong(text, ref number);
+        byte number=1;
+        return IsByte(text, ref number);
     }
 }

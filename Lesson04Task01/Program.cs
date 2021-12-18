@@ -2,6 +2,7 @@
 using Task01.Class;
 
 IntHelpers intHelpers = new IntHelpers();
+ByteHelpers byteHelpers = new ByteHelpers();    
 StringHelpers stringHelpers = new StringHelpers();
 SexHelpers sexHelpers = new SexHelpers();
 LongHelpers longHelpers = new LongHelpers();
@@ -9,12 +10,12 @@ LongHelpers longHelpers = new LongHelpers();
 Employee employee = new Employee();
 
 Console.WriteLine("Wprowadż pracownika");
-employee.FirstName = stringHelpers.GiveMeString("Podaj Imię: ");
-employee.LastName = stringHelpers.GiveMeString("Podaj Nazwisko: ");
-employee.Age = intHelpers.GiveMeInt("Podaj wiek: ");
-employee.Sex = sexHelpers.GiveMeSex("Podaj płeć (m lub k): ");
-employee.PESEL = stringHelpers.GiveMeString("Podaj PESEL: ");
-employee.Id = longHelpers.GiveMeLong("Podaj numer pracownika: ");
+employee.FirstName = stringHelpers.GiveMe("Podaj Imię: ");
+employee.LastName = stringHelpers.GiveMe("Podaj Nazwisko: ");
+employee.Age = byteHelpers.GiveMe("Podaj wiek: ");
+employee.Sex = sexHelpers.GiveMe("Podaj płeć (m lub k): ");
+employee.PESEL = stringHelpers.GiveMe("Podaj PESEL: ");
+employee.Id = longHelpers.GiveMe("Podaj numer pracownika: ");
 
 Console.WriteLine("\r\nWpisane dane:");
 Console.WriteLine($"Imię: { employee.FirstName}");

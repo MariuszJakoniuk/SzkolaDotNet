@@ -2,7 +2,7 @@
 
 public class CharHelpers
 {
-    public char GiveMeChar(string text)
+    public char GiveMe(string text)
     {
         string stringString;
         bool isError = false;
@@ -27,7 +27,7 @@ public class CharHelpers
         do
         {
             if (isError) Console.WriteLine("Błąd podaj jeszcze raz.");
-            charLetter = GiveMeChar(text);
+            charLetter = GiveMe(text);
             isError = true;
         }
         while (Char.IsLetter(charLetter) == false );
